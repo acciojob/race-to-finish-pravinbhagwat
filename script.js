@@ -9,14 +9,14 @@ const promise1 = new Promise((resolve, reject) => {
 	}, Math.random() * 5000);	
 });
 
-promises.add(promise1);
+promises.push(promise1);
 
 const promise2 = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		resolve(Math.random() * 4 + 1)
 	}, Math.random() * 5000);	
 });
-promises.add(promise2);
+promises.push(promise2);
 
 const promise3 = new Promise((resolve, reject) => {
 	setTimeout(() => {
@@ -24,7 +24,7 @@ const promise3 = new Promise((resolve, reject) => {
 	}, Math.random() * 5000);	
 });
 
-promises.add(promise3);
+promises.push(promise3);
 
 const promise4 = new Promise((resolve, reject) => {
 	setTimeout(() => {
@@ -32,14 +32,14 @@ const promise4 = new Promise((resolve, reject) => {
 	}, Math.random() * 5000);	
 });
 
-promises.add(promise4);
+promises.push(promise4);
 
 const promise5 = new Promise((resolve, reject) => {
 	setTimeout(() => {
 		resolve(Math.random() * 4 + 1)
 	}, Math.random() * 5000);	
 })
-promises.add(promise5);
+promises.push(promise5);
 
 Promise.any(promises)
 	.then((result) => {
